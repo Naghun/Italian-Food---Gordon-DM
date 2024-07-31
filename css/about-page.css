@@ -1,0 +1,10 @@
+.page-wrapper {
+    .container {
+        .starter-row {
+            .starter-container {
+                background-color: rgb(40, 55, 190);
+                height: 200px;
+            }
+        }
+    }
+}
