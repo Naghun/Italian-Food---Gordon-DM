@@ -1,7 +1,7 @@
 <div class="navigation-wrapper">
     <div class="container navigation">
         <div class="row navigation-row">
-            <div class="col-12 d-flex justify-content-start align-items-center p-0 m-0 navigation-container">
+            <div class="col-12 d-flex justify-content-start align-items-center p-0 m-0 navigation-container" id="navigation-container">
                 <div class="logo-container d-flex justify-content-center align-items-center">
                     <a href="<?php echo home_url(); ?>" class="logo"><img src="<?php echo get_theme_file_uri('/images/logo.png'); ?>" alt="logo"></a>
                 </div>

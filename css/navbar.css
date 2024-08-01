@@ -25,13 +25,14 @@
 .navigation-wrapper {
     position: -webkit-sticky; /* For Safari */
     position: fixed;
-    z-index: 3;
+    z-index: 5;
     width: 100%;
     .navigation {
         .navigation-row {
             .navigation-container {
                 position: relative;
                 height: 100px;
+                transition: 0.3s all ease;
                 .logo-container {
                     width: 150px;
                 }
@@ -139,6 +140,9 @@
                     opacity: 1;
                     visibility: visible;
                 }
+            }
+            .navigation-container.add-color {
+                background-color: var(--black-color);
             }
         }
     }

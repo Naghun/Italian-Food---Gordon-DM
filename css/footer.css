@@ -31,6 +31,17 @@
                 position: relative;
                 height: 700px;
                 background-color: var(--footer-background-color);
+                .back-to-top {
+                    position: absolute;
+                    top: 85%;
+                    left: 85%;
+                    font-size: 34px;
+                    color: var(--white-color);
+                    transition: 0.3s all ease;
+                }
+                .back-to-top:hover {
+                    color: var(--white-color-hover);
+                }
                 .details {
                     .left {
                         .header {

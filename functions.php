@@ -39,7 +39,6 @@ function italian_food_files() {
     }
     
     #custom js scripts
-    wp_enqueue_script('js-logic', get_stylesheet_directory_uri() . '/js/logic.js', array(), '1.0', true);
     wp_enqueue_script('navbar-logic', get_stylesheet_directory_uri() . '/js/navbar-logic.js', array(), '1.0', true);
 }
 
@@ -59,11 +58,10 @@ add_action('init', 'custom_register_menus');
 
 
 ###################################################################
-#############         nnnnnnnnnnnnnnnnnnnn          ###############
+#############        Hide WordPress Admin Menu      ###############
 ###################################################################
 
-
-
+add_filter('show_admin_bar', '__return_false'); 
 
 ?>
 
