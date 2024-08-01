@@ -23,7 +23,6 @@
 
     <!-- ******************* The Navbar Area ******************* -->
     <header class="site-header" id="wrapper-navbar">
-        <!-- Ovo je mesto gde možeš uključiti tvoj navbar -->
         <?php if ( function_exists( 'get_template_part' ) ) {
             get_template_part( 'global-templates/navbar' );
         } ?>

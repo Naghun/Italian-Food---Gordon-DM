@@ -1,9 +1,176 @@
-.navigation-container {
-    background-color: black;
+/* ########################################################################################### */
+/* ###########################              Imports              ############################# */
+/* ########################################################################################### */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ########################################################################################### */
+/* ###########################              Variables              ########################### */
+/* ########################################################################################### */
+
+:root {
+    --font-mont: 'Montserrat', sans-serif;
+    --font-abril: "Abril Fatface", serif;
+    --black-color: black;
+    --black-color-hover: rgba(0, 0, 0, 0.5);
+    --white-color: white;
+    --white-color-hover: rgba(255, 255, 255, 0.6);
 }
-.text {
-    color: green;
-    font-size: 24px;
-    font-weight: 900;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+/* ########################################################################################### */
+/* ###########################              Styles         ################################### */
+/* ########################################################################################### */
+
+
+.navigation-wrapper {
+    position: -webkit-sticky; /* For Safari */
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    .navigation {
+        .navigation-row {
+            .navigation-container {
+                position: relative;
+                height: 100px;
+                .logo-container {
+                    width: 150px;
+                }
+                .main-menu-container {
+                    height: 100px;
+                    .primary-menu {
+                        .menu {
+                            height: 100px;
+                            margin-left: 50px;
+                            list-style: none;
+                            padding: 0%;
+                            font-family: var(--font-mont);
+                            font-weight: 500;
+                            font-size: 16px;
+                            gap: 10px;
+                            margin: 0%;
+                            li {
+                                width: 16%;
+                                a {
+                                    width: 100%;
+                                    color: var(--white-color);
+                                    text-decoration: none;
+                                    transition: 0.5s all ease;
+                                }
+                            }
+                            li:hover {
+                                a {
+                                    color: var(--white-color-hover);
+                                }
+                            }
+                        }
+                    }
+                }
+                .nav-right {
+                    .hamburger-container {
+                        padding: 10px;
+                        background-color: var(--white-color);
+                        border: 1px solid black;
+                        border-radius: 10px;
+                        margin-right: 20px;
+                    }
+                    .hamburger-container:hover {
+                        background-color: var(--white-color-hover);
+                    }
+                }
+                .navigation-popup {
+                    height: 100dvh;
+                    opacity: 0;
+                    visibility: hidden;
+                    position: absolute;
+                    left: 60%;
+                    top: 0%;
+                    opacity: 0;
+                    background-color: black;
+                    width: 50%;
+                    transition: 0.5s all ease;
+                    .close-button-container {
+                        i {
+                            font-size: 24px;
+                            color: var(--white-color);
+                            transition: 0.3s all ease;
+                            cursor: pointer;
+                        }
+                    }
+                    .close-button-container:hover {
+                        i {
+                            color: var(--white-color-hover);
+                        }
+                    }
+                    .primary-menu {
+                        .menu {
+                            margin-left: 50px;
+                            list-style: none;
+                            padding: 0%;
+                            font-family: var(--font-mont);
+                            font-weight: 500;
+                            font-size: 16px;
+                            gap: 10px;
+                            margin: 0%;
+                            li {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 24px;
+                                a {
+                                    color: var(--white-color);
+                                    text-decoration: none;
+                                    transition: 0.5s all ease;
+                                    text-align: center;
+                                }
+                            }
+                            li:hover {
+                                a {
+                                    color: var(--white-color-hover);
+                                }
+                            }
+                        }
+                    }
+                }
+                .navigation-popup.active {
+                    display: flex;
+                    visibility: visible;
+                    left: 50%;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .navigation-wrapper {
+        .navigation {
+            .navigation-row {
+                .navigation-container {
+                    justify-content: space-between !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 778px) {
+    .navigation-wrapper {
+        .navigation {
+            .navigation-row {
+                .navigation-container {
+                    .navigation-popup {
+                        width: 100%;
+                        left: 10%;
+                    }
+                    .navigation-popup.active {
+                        left: 0%;
+                    }
+                }
+                .nav-right {
+                    width: 150px;
+                }
+            }
+        }
+    }
 }

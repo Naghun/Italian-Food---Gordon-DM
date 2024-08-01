@@ -11,8 +11,11 @@ function italian_food_files() {
     wp_enqueue_script('jquery');
     
     #registering bootstrap
-    wp_enqueue_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
-    wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', array('jquery'), null, true);
+    wp_enqueue_style( 'bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' );
+    wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js', array('jquery'), null, true );
+
+    #registering font-awesome
+    wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' );
 
     #custom css styles
     
@@ -36,6 +39,7 @@ function italian_food_files() {
     
     #custom js scripts
     wp_enqueue_script('js-logic', get_stylesheet_directory_uri() . '/js/logic.js', array(), '1.0', true);
+    wp_enqueue_script('navbar-logic', get_stylesheet_directory_uri() . '/js/navbar-logic.js', array(), '1.0', true);
 }
 
 ###################################################################

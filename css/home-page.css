@@ -1,9 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-mont: 'Montserrat', sans-serif;
+    --font-abril: 'Montserrat', sans-serif;
+    --black-color: black;
+    --black-color-hover: rgba(0, 0, 0, 0.5);
+}
+
 .page-wrapper {
     .container {
         .starter-row {
             .starter-container {
                 background-color: green;
-                height: 200px;
+                position: relative;
+                .img-container {
+                    width: 100%;
+                    img {
+                        z-index: 1;
+                    }
+                }
+                .img-container::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;  
+                    width: 100%;
+                    background-size: cover;
+                    background: rgb(0,0,0);
+                    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 38%, rgba(0,0,0,0) 100%);
+                    z-index: 2;
+                }
             }
         }
     }
