@@ -3,7 +3,9 @@
     <div class="container m-auto footer">
         <div class="row footer-row">
             <div class="col-12 footer-container d-flex justify-content-center align-items-center">
-				<i class="fa fa-circle-up back-to-top" id="back-to-top"></i>
+                <div class="back-to-top-container d-flex justify-content-center align-items-center"  id="back-to-top">
+                    <i class="fa-solid fa-angle-up back-to-top"></i>
+                </div>
                 <div class="details col-12 d-flex justify-content-between align-items-start">
                     <div class="left col-4 d-flex flex-column justify-content-center align-items-center">
                         <h3 class="header col-9">Best Pizza</h3>

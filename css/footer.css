@@ -31,16 +31,24 @@
                 position: relative;
                 height: 700px;
                 background-color: var(--footer-background-color);
-                .back-to-top {
+                .back-to-top-container {
+                    width: 50px;
+                    height: 50px;
                     position: absolute;
                     top: 85%;
                     left: 85%;
-                    font-size: 34px;
-                    color: var(--white-color);
                     transition: 0.3s all ease;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    background-color: var(--white-color);
+                    .back-to-top {
+                        font-size: 34px;
+                        color: var(--black-color);
+                    }
                 }
-                .back-to-top:hover {
-                    color: var(--white-color-hover);
+                .back-to-top-container:hover {
+                    background-color: var(--white-color-hover);
                 }
                 .details {
                     .left {

@@ -21,6 +21,7 @@ function italian_food_files() {
     
     wp_enqueue_style('navigation-styles', get_template_directory_uri() . '/css/navbar.css');
     wp_enqueue_style('footer-styles', get_template_directory_uri() . '/css/footer.css');
+    wp_enqueue_style('placeholder-styles', get_template_directory_uri() . '/css/placeholder-template.css');
 
     if (is_front_page() || is_page_template('page-templates/home-page-template.php')) {
         wp_enqueue_style('home-page-styles', get_stylesheet_directory_uri() . '/css/home-page.css', array());
@@ -40,6 +41,15 @@ function italian_food_files() {
     
     #custom js scripts
     wp_enqueue_script('navbar-logic', get_stylesheet_directory_uri() . '/js/navbar-logic.js', array(), '1.0', true);
+
+    if (is_front_page() || is_page_template('page-templates/home-page-template.php')) {
+        wp_enqueue_script('subscriber-logic', get_stylesheet_directory_uri() . '/js/subscriber-logic.js', array(), '1.0', true);
+        wp_localize_script('subscriber-logic', 'form_subscriber_data', array(
+			'site_url' => 'http://cyber-security-summit.local/',
+			'nonce' => wp_create_nonce('wp_subscriber'),
+			'ajax_url' => admin_url('admin-ajax.php')
+		));
+    }
 }
 
 ###################################################################
@@ -62,6 +72,12 @@ add_action('init', 'custom_register_menus');
 ###################################################################
 
 add_filter('show_admin_bar', '__return_false'); 
+
+###################################################################
+#############             Required Files            ###############
+###################################################################
+
+require get_theme_file_path('inc-php/subscriber-ajax.php');
 
 ?>
 

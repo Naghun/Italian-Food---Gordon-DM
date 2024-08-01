@@ -10,19 +10,11 @@ defined( 'ABSPATH' ) || exit;
 
 
 get_header();
-?>
-<div class="page-wrapper">
-    <div class="container">
-        <div class="row starter-row">
-            <div class="starter-container col-12">
-                <h1>This is Promo Page!!!</h1>
-            </div>
-        </div>
-    </div>
-</div>
 
 
-<?php
+require get_theme_file_path('global-templates/placeholder-template.php');
+
+
 get_footer();
 
 ?>
