@@ -19,7 +19,8 @@ function italian_food_files() {
 
     #custom css styles
     
-    wp_enqueue_style('custom-styles', get_template_directory_uri() . '/css/navbar.css');
+    wp_enqueue_style('navigation-styles', get_template_directory_uri() . '/css/navbar.css');
+    wp_enqueue_style('footer-styles', get_template_directory_uri() . '/css/footer.css');
 
     if (is_front_page() || is_page_template('page-templates/home-page-template.php')) {
         wp_enqueue_style('home-page-styles', get_stylesheet_directory_uri() . '/css/home-page.css', array());

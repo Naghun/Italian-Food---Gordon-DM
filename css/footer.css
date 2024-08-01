@@ -1,0 +1,214 @@
+/* ########################################################################################### */
+/* ###########################              Imports              ############################# */
+/* ########################################################################################### */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ########################################################################################### */
+/* ###########################              Variables              ########################### */
+/* ########################################################################################### */
+
+:root {
+    --font-mont: 'Montserrat', sans-serif;
+    --font-abril: "Abril Fatface", serif;
+    --black-color: black;
+    --black-color-hover: rgba(0, 0, 0, 0.5);
+    --white-color: white;
+    --white-color-hover: rgba(255, 255, 255, 0.6);
+    --footer-background-color: #111111;
+}
+
+/* ########################################################################################### */
+/* ###########################              Styles         ################################### */
+/* ########################################################################################### */
+
+
+.footer-wrapper {
+    width: 100%;
+    .footer {
+        .footer-row {
+            .footer-container {
+                position: relative;
+                height: 700px;
+                background-color: var(--footer-background-color);
+                .details {
+                    .left {
+                        .header {
+                            color: var(--white-color);
+                            font-size: 20px;
+                            font-weight: 400;
+                            font-family: var(--font-mont);
+                            padding-bottom: 10px;
+                        }
+                        .text {
+                            color: var(--white-color);
+                            font-size: 16px;
+                            line-height: 18px;
+                            font-weight: 300;
+                            font-family: var(--font-mont);
+                            padding-bottom: 10px;
+                        }
+                        .socials {
+                            .socials-list {
+                                font-size: 16px;
+                                gap: 10px;
+                                padding: 0%;
+                                .socials-list-item {
+                                    border: none;
+                                    border-radius: 50%;
+                                    background-color: var(--white-color);
+                                    aspect-ratio: 1/1;
+                                    transition: 0.3s all ease;
+                                    cursor: pointer;
+                                    padding: 5px;
+                                }
+                                .socials-list-item:hover {
+                                    background-color: var(--white-color-hover);
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        .footer-nav-list {
+                            .outside-list-link {
+                                color: var(--white-color);
+                                font-size: 20px;
+                                line-height: 22px;
+                                font-weight: 400;
+                                font-family: var(--font-mont);
+                                text-decoration: none;
+                                padding-bottom: 20px;
+                                transition: 0.3s all ease;
+                            }
+                            .outside-list-link:hover {
+                                color: var(--white-color-hover);
+                            }
+                            .inside-list {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 0%;
+                                list-style: none;
+                                gap: 5px;
+                                .inside-list-item {
+                                    .inside-list-link {
+                                        font-size: 16px;
+                                        line-height: 22px;
+                                        font-family: var(--font-mont);
+                                        font-weight: 300;
+                                        color: var(--white-color);
+                                        text-decoration: none;
+                                        transition: 0.3s all ease;
+                                    }
+                                }
+                                .inside-list-item:hover {
+                                    .inside-list-link {
+                                        color: var(--white-color-hover);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1400px) {
+    .footer-wrapper {
+        .footer {
+            .footer-row {
+                .footer-container {
+                    .details {
+                        .left {
+                            width: calc(5/12 * 100%) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1400px) {
+    .footer-wrapper {
+        .footer {
+            .footer-row {
+                .footer-container {
+                    .details {
+                        .left {
+                            .text {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .footer-wrapper {
+        .footer {
+            .footer-row {
+                .footer-container {
+                    .details {
+                        flex-direction: column-reverse;
+                        .left, .right {
+                            width: 100% !important;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .right {
+                            padding-bottom: 50px;
+                        }
+                        .left {
+                            .header, .text {
+                                width: 90% !important;
+                            }
+                            .socials {
+                                width: 90% !important;
+                                justify-content: start !important;
+                                padding: 0px;
+                                .socials-list {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 778px) {
+    .footer-wrapper {
+        .footer {
+            .footer-row {
+                .footer-container {
+                    .details {
+                        .right {
+                            .footer-nav-list {
+                                .inside-list {
+                                    .inside-list-item {
+                                        padding: 0px 5px;
+                                        .inside-list-link {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .left {
+                            .socials {
+                                .socials-list {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

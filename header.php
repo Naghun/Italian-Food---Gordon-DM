@@ -9,9 +9,9 @@
     <?php
     if (is_front_page() || is_home()) {
 
-        echo 'Italian Food |';
+        echo 'Italian Food | Gordon DM';
     } else {
-        wp_title('|', true, 'right');
+        wp_title('| Gordon DM', true, 'right');
     }
     ?>
     </title>
