@@ -1,0 +1,126 @@
+/* ########################################################################################### */
+/* ###########################              Imports         ################################### */
+/* ########################################################################################### */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ########################################################################################### */
+/* ###########################              Variables         ################################### */
+/* ########################################################################################### */
+
+:root {
+    --font-mont: 'Montserrat', sans-serif;
+    --font-abril: "Abril Fatface", serif;
+    --black-color: black;
+    --black-color-hover: rgba(0, 0, 0, 0.5);
+    --white-color: white;
+    --white-color-hover: rgba(255, 255, 255, 0.6);
+}
+
+/* ########################################################################################### */
+/* ###########################           Meal Row          ################################### */
+/* ########################################################################################### */
+
+.page-wrapper {
+    .container {
+        .meal-row {
+            .meal-container {
+                background-color: rgb(34,34,34);
+                height: 80dvh;
+                .meal-details {
+                    .header {
+                        font-size: 46px;
+                        font-weight: 500;
+                        font-family: var(--font-abril);
+                        color: var(--white-color);
+                        line-height: 50px;
+                    }
+                    p {
+                        font-size: 18px;
+                        font-family: var(--font-mont);
+                        font-weight: 500;
+                        color: var(--white-color);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .page-wrapper {
+        .container {
+            .meal-row {
+                .meal-container {
+                    .meal-details {
+                        .header {
+                            font-size: 32px;
+                            line-height: 36px;
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                    }
+                    .left {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .page-wrapper {
+        .container {
+            .meal-row {
+                .meal-container {
+                    .meal-details {
+                        flex-direction: column;
+                        .right {
+                            width: 100%;
+                            .header {
+                                font-size: 26px;
+                                line-height: 28px;
+                            }
+                            p {
+                                font-size: 16px;
+                                line-height: 18px;
+                            }
+                        }
+                        .left {
+                            width: 50%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .page-wrapper {
+        .container {
+            .meal-row {
+                .meal-container {
+                    .meal-details {
+                        .right {
+                            .header {
+                                font-size: 24px;
+                                line-height: 28px;
+                            }
+                            p {
+                                font-size: 14px;
+                                line-height: 18px;
+                                margin: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -38,6 +38,9 @@ function italian_food_files() {
     if (is_page('Promo') || is_page_template('page-templates/promo-page-template.php')) {
         wp_enqueue_style('promo-page-styles', get_stylesheet_directory_uri() . '/css/promo-page.css', array());
     }
+    if (is_singular('meal')) {
+		wp_enqueue_style('single-meal-style', get_stylesheet_directory_uri() . '/css/single-meal.css', array(), null, 'all');
+	}
     
     #custom js scripts
     wp_enqueue_script('navbar-logic', get_stylesheet_directory_uri() . '/js/navbar-logic.js', array(), '1.0', true);

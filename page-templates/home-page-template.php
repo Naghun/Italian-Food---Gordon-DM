@@ -59,7 +59,7 @@ get_header();
                                                     <img src="<?php echo esc_url($image_url); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
                                                 </div>
                                                 <div class="product-details col-12 justify-content-start align-items-center product">
-                                                    <h3 class="col-10 product-header text-center"><?php echo the_title(); ?></h3>
+                                                    <h3 class="col-12 product-header text-center"><?php echo the_title(); ?></h3>
                                                     <p class="col-12 product-desc text-center"><?php echo get_field('description'); ?></p>
                                                 </div>
                                             </div>
