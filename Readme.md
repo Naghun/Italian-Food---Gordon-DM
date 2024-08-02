@@ -16,15 +16,14 @@ Pronašao sam 2 jednostavna i po meni najlakša načina za podizanje ovog WordPr
 1. Način:
    - na sljedećem linku ćete pronaći zipovan file koji je potrebno downloadovati:
      https://1drv.ms/u/s!ArHjR2C1pfu-h7MI6Sz5JzAxQnal4A?e=kcDPRS
-
-  - otvoriti ili skinuti Local by FlyWheel razvojno okruženje za izradu WordPress stranica:
+     
+   - otvoriti ili skinuti Local by FlyWheel razvojno okruženje za izradu WordPress stranica:
     https://localwp.com/
-
-  - Drag&Drop zipovani file u Local Dashboard, sačekati određeno vrijeme da se projekat uspostavi (od 1 - 5min maximalno)
-  - Nakon postavljanja Sitea odobriti one-click admin i odabrati jednog od admina sitea (Opcionalno)
-  - Nakon toga pritisnuti dugme WP Admin koji će vas automatski redirectati na admin dashboard (ukoliko je one-click-admin opcija odobrena) ili na log in ukoliko niste logovani
-  - Pristupni podaci su: Username: 'admin', Password: 'admin'.
-  - Nakon odrađenih koraka logovani ste i možete koristiti temu. Sretno!!! (U slučaju greške prvo pokušati sa osvježavanjem permalinkova: < Admin dashboard -> settings -> permalinks -> Save Changes)
+   - Drag&Drop zipovani file u Local Dashboard, sačekati određeno vrijeme da se projekat uspostavi (od 1 - 5min maximalno)
+   - Nakon postavljanja Sitea odobriti one-click admin i odabrati jednog od admina sitea (Opcionalno)
+   - Nakon toga pritisnuti dugme WP Admin koji će vas automatski redirectati na admin dashboard (ukoliko je one-click-admin opcija odobrena) ili na log in ukoliko niste logovani
+   - Pristupni podaci su: Username: 'admin', Password: 'admin'.
+   - Nakon odrađenih koraka logovani ste i možete koristiti temu. Sretno!!! (U slučaju greške prvo pokušati sa osvježavanjem permalinkova: < Admin dashboard -> settings -> permalinks -> Save Changes)
 
 2. Način:
    - Na sljedećem linku pronaći ćete file koji je potrebno downloadovati.
