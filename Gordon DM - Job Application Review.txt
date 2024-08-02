@@ -1,0 +1,75 @@
+Osvrt na Italian Food – Test projekat za Gordon DM
+
+Napravljen kopletan custom responzivan dizajn koristeći Bootstrap i vanilla css kao i 
+osnovna interaktivnost koristeci vecinom vanilla JS zbog jednostavnosti projekta. 
+Ajax API calls rađeni pomoću JQuerya radi jednostavnosti iste. 
+Dodana ACF polja za Post Type Meals (Posebno bitan za temu s obzirom da front page 
+prikazuje 3 posljednja - moguće napraviti 3 najpopularnija pomoću 'Likes' ACF polja koje je 
+također dodano). 
+
+ACF Post Types za Subscription i Orders - Subscription ajax postavljen tako da unoseci 
+email u "Subscribe" paragraf početne stranice automatski postajemo Subscriberi gdje 
+Admin ima mogućnost pregleda istih u Dashboardu. 
+Orders logika nije implementirana s obzirom da smatram da je sva logika ista kao i kod 
+Subscribera s tim da je dosta više "Time consuming" te s obzirom na prirodu projekta 
+trenutno nije urađena. 
+
+Dodana 2 Menija - Main Menu i Footer Menu te dodane sve stranice za Main Menu dok su 
+stranice Footer Menua također nešto što se ponavlja te njih nisam odradio. 
+Dodani Permalinkovi i osnovni predlošci za svaku stranicu pojedinačno ali trenutno njihov 
+izgled kontroliše global-template radi jednostavnosti. 
+
+Blog stranica zadužena za Blogove ali u ovom projektu ostavljena van glavnog Menija s 
+obzirom da njena funkcionalnost nije potrebna za dati projekat. 
+Dodana "Single Meals" stranica te njeni linkovi vode na pojedinačne podatke o svakoj vrsti 
+jela (Kao nadoknada radi izostavljanja single blog stranice). 
+
+Urađen dizajn detalj vezan za Navigacijski meni koji omogućava meniju da prilikom 
+skrolanja dobije crnu pozadinu radi jasnoće (Kao što je urađeno na Gordon DM stranici). 
+Dodano footer dugme koje korisniku pruža mogućnost brzog i jednostavnog povratka na 
+vrh stranice. 
+
+Svi fileovi u temi razvrstani tako da su kao cjelina jedan izgledan dokument i kao takvi 
+pružaju mogućnost da se budući developeri lakše snađu i pronađu dio koda koji je 
+potrebno izmjeniti ili nadograditi. 
+Odrađeni Testovi na većini dimenzija i uređaja (Koristeći browser responsivne alate koji su 
+trenutno jedini mogući alat). 
+
+Kroz čitav proces je vođeno računa da stilovi budu "browser compatible" ali ukoliko postoji 
+određenih problema vjerujem da bi bili lahko uklonjeni koristeći koristecu webpack te 
+odgovrajuće dodatke poput babela i terser minifiera koji nisu korišteni radi jednostavnosti 
+projekta i blizine "deadline-a". 
+
+Naglašavam da sam projekat ima još mnogo stvari koje bi bilo potrebno odraditi i koje bih i 
+sam volio implementirati ali s obzirom da projekat treba da služi samo kao verifikator 
+našeg znanja odlučio sam da je trenutna verzija dovoljna te se nadam da će ovakva ispuniti 
+vaša očekivanja. 
+
+U slučaju potrebe za izmjenama i dodacima ostavio sam čitav dan u kojima bih volio da 
+ispravim određene stvari u slučaju da budete nezadovoljni. 
+Za dostavljeni projekat korišten alat Local by Flywheel za lokalni razvoj stranice radi 
+jednostavnosti i mislim da bi u slučaju problema sa konfiguracijom najlakše bilo preko 
+istog uspostaviti projekat te dostavljam detaljan opis kako pomoću fileova podići stranicu. 
+Radeći projekat vodio sam računa da dizajn bude što sličniji dizajnu iz Photoshopa ali s 
+obzirom da sam dosadašnje projekte radio preko figme nailazio sam na male nesigurnosti 
+(npr. veličina fontova koja nekom konverzijom iz pt u px nije izgledala odgovarajuća). 
+Postoji mogućnost malog odstupanja u veličini fontova i whitespaceu čisto radi brzine 
+odrađivanja projekta ali da sam smatrao da će projekat doći u ruke kupca mnogo više 
+pažnje bi posvetio istom s obzirom da sam već odrađivao projekte gdje je bila potrebna 
+tačnost do zadnjeg piksela. 
+
+Smatram da sam osoba koja može doprinjeti vašem timu sa trenutnim znanjem koje seže 
+izvan okvira phpa i WordPressa ali isto tako mislim da trenutno ne postoji stvar vezana za 
+web developing da je ne želim naučiti bila ona vezana za WordPress ili bilo koji drugi CMS, 
+Framework ili jezik. 
+
+Jedna od mojih prednosti je što sam obučen u Reactu te mi nije strani rad sa WebPackom, 
+Reactom te izradom Gutenberg blokova ili custom tema za Elementor. 
+Za stvari koje trenutno ne znam uraditi već ste rekli da posjedujete osobu od koje mogu 
+učiti te vam mogu garantovati da ču i "to", ma šta to bilo, uskoro i uz vašu pomoć, ako Bog 
+da, savladati. 
+
+Radujem se mogućoj saradnji, te vam se zahvaljujem na brzini odgovaranja te 
+pristupačnosti koju ste pokazali prema potencijalnom uposleniku te vam želim svu sreću 
+ma koga odabrali za budućeg WordPress developera Gordon DM tima. 
+Abdullah Sinanović 2.8.2024.
