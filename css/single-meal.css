@@ -40,6 +40,15 @@
                         font-family: var(--font-mont);
                         font-weight: 500;
                         color: var(--white-color);
+                        i {
+                            padding-left: 10px;
+                            font-size: 20px;
+                            cursor: pointer;
+                        }
+                        i:hover {
+                            color: var(--white-color-hover);
+                            transform: scale(1.2);
+                        }
                     }
                 }
             }

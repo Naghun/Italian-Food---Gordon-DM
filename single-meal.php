@@ -32,14 +32,17 @@ get_header();
                                     <p class="discount col-12 d-flex justify-content-center align-items-center">
                                         <?php 
                                         if ($discount > 0) {
-                                            echo '<p>Discount: Yes</p>';
+                                            echo '<p>Discount: Yes - ' . $discount . '% </p>';
                                             $discounted_price = $price - ($price * $discount / 100);
                                             echo '<p>Discounted Price: ' . $discounted_price . '</p>';
                                         } else {
                                             echo '<p>No discount</p>';
                                         }
                                         ?>
-                                    <p class="likes col-12 d-flex justify-content-center align-items-center">Likes: <?php echo get_field('likes'); ?></p>
+                                    <p class="likes col-12 d-flex justify-content-center align-items-center">
+                                        Likes: <?php echo get_field('likes'); ?>
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </p>
                                     </p>
                                 </div>
                                 <div class="left col-5 d-flex justify-content-center align-items-center">
