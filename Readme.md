@@ -11,8 +11,9 @@ Za demonstraciju rada sa API Callovima korišen WordPress Ajax i JQuery.
 
 ## Pokretanje WordPress projekta
 
-U ovom repositoryu možete pronaći local.sql file koji je najnovija verzija Baze podataka potrebne za ovaj projekat kao, svi ostali fileovi su filovi vezani za temu Italian Food - Gordon DM.
-Pronašao sam 2 jednostavna i po meni najlakša načina za podizanje ovog WordPress projekta te vam u nastavku objašnjavam oba:
+U ovom repositoryu možete pronaći local.sql file koji je najnovija verzija Baze podataka potrebne za ovaj projekat.
+Svi ostali fileovi su filovi vezani za custom temu Italian Food - Gordon DM.
+U nastavku vam pojašnjavam dva jednostavna i po meni najlakša načina za podizanje ovog WordPress projekta:
 1. Način:
    - na sljedećem linku ćete pronaći zipovan file koji je potrebno downloadovati:
      https://1drv.ms/u/s!ArHjR2C1pfu-h7MI6Sz5JzAxQnal4A?e=kcDPRS
